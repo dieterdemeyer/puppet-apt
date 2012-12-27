@@ -1,0 +1,5 @@
+= puppet-apt module
+
+{<img src='https://codex.cegeka.be/jenkins/job/puppet-apt/badge/icon' />}[https://codex.cegeka.be/jenkins/job/puppet-apt/]
+
+This is the apt module.
