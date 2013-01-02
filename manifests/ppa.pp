@@ -19,7 +19,7 @@ define apt::ppa(
 
   $package = $::lsbdistrelease ? {
     /^[1-9]\..*|1[01]\..*|12.04$/ => 'python-software-properties',
-    default  => 'software-properties-common',
+    default                       => 'software-properties-common',
   }
 
   if ! defined(Package[$package]) {
@@ -32,7 +32,7 @@ define apt::ppa(
     logoutput => 'on_failure',
     require   => [
       File[$sources_list_d],
-      Package["${package}"],
+      Package[$package],
     ],
     notify    => Exec['apt_update'],
   }
