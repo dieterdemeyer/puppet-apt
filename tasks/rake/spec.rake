@@ -95,4 +95,3 @@ task :spec do
   Rake::Task[:spec_standalone].invoke
   Rake::Task[:spec_clean].invoke
 end
-
